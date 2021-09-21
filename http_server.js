@@ -30,7 +30,7 @@ app.get('/data', function (req, res) {
 
 //account
 app.post('/account', function(req, res){
-    res.send('account');
+    res.send(console.log("get account"));
 });
 
 
