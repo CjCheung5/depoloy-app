@@ -4,17 +4,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/3.8.3/superagent.min.js"></script>
 <body>
     <div style="padding:50px">     
-        <button class="btn btn-primary" style="font-size: 3em;" onclick="getaccount()">Get Account</button><br>
+        <button class="btn btn-primary" style="font-size: 3em;" onclick="postaccount()">Post Account</button><br>
         <div id="status"></div>        
     </main>
 <script>
 
-function getaccount() {
+function postaccount() {
     var status  = document.getElementById('status');
-    var url = '/account';
+    var url = '/postaccount';
 
     superagent
-        .get(url)
+        .post(url)
         .end(function(err,res){
             if(err){
                 console.log(err);
@@ -25,7 +25,6 @@ function getaccount() {
             }
         });
 }
-
 
 
 </script>

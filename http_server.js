@@ -35,7 +35,7 @@ app.get('/account', function(req, res){
 
 // post a account
 
-app.post('/account', function(req, res){
+app.post('/postaccount', function(req, res){
     res.send("this is post account");
 });
 
