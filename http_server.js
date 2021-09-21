@@ -29,8 +29,14 @@ app.get('/data', function (req, res) {
 });
 
 //account
+app.get('/account', function(req, res){
+    res.send("this is get account");
+});
+
+// post a account
+
 app.post('/account', function(req, res){
-    res.send(console.log("get account"));
+    res.send("this is post account");
 });
 
 
